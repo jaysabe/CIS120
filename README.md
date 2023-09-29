@@ -1,2 +1,2 @@
-# CIS120
-This is a repo created for CIS 120: Python Programming I at Portland Community College
+# CIS133Y
+This is a repo created for CIS 133Y: Python Programming I at Portland Community College
