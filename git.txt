@@ -1,2 +1,5 @@
 1. Create repo on Github
 2. Clone repo to local machine
+3. Checkout a branch to make changes
+4. Push the branch up to Github
+
