@@ -1,0 +1,44 @@
+Notes: Python Programming I : 133Y
+
+- Download Pycharm Professional -- a
+	-jet brains -> free access student license 
+		-official document tab
+	add documents : screenshot of MyCourses as jpeg
+
+//-web storm, php storm, intellij --later
+
+
+PyCharm :
+1. Start screen : Existing Env
+	-check previously conf interpreter
+		-add interpreter --> local interpreter
+			-get PATH
+			-inherit global  
+2. Python --> re-download and check the "add to PATH" box
+
+3. PIP -- Python Package Installer 
+
+4. App data : enable power user in settings
+	- file Explorer
+		-view tab --> options
+			-uncheck hidden files
+			-uncheck hide extensions
+4.5 or just type /AppData/
+5. App Data --> Python/Python311/
+
+6. In PyCharm :
+	-Run: Run Config for files: --12:08
+	-You can edit the config file for diff files / folders
+		-NOTE: the conf by default will be for ONE file
+		-the debugger --> FRICKIN SWEET
+			-> right click --> refactor --> rename and BLAMO all variable names are diff now
+			-> Will show the call stack in bottom left (also called "Stack frames"
+
+7. __name__ = __main__ this is a special global variable : if '__name__' is set to anything else, its when you import libraries
+	-> then name = new library 
+	-> If name = main , runs at "top level" 
+	-> this is why when we import main, its referring to this special variable
+	=> example: "from main import {name of file}"
+		-
+
+8. Lab1 and Quiz 1 by Sunday
