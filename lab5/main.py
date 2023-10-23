@@ -7,7 +7,7 @@
 #                   check the status, search, etc
 #
 # Input:            match statements, smoothies, attributes of the smoothies dictionary
-# Output:
+# Output:           Smoothies and their ingredients
 # Sources:          Lab 5 specifications
 #                   Module 5 -- had to do on own due to traveling this week
 # ******************************************************************************
@@ -34,9 +34,9 @@ def main():
 
     while True:
         match (input("Option: ").lower()):
-            case "show":
+            case "display":
                 # call cart_stats
-                calc.cart_stats()
+                calc.cart_stats(smoothies)
 
             case "list":
                 # call check_cart
@@ -57,10 +57,6 @@ def main():
         smoothie_menu()
 
     print("Thank you for stopping by! 🛒")
-
-
-
-
 
 
 # *****************************************************
