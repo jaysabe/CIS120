@@ -44,6 +44,7 @@ def print_receipt(total, tip_percentages):
         tip_amount = calculate_tip(total, tip_percentage)
         print(f"{tip_percentage}%: ${tip_amount:.2f}")
 
+
 def is_valid_price(price):
     if not price.replace('.', '', 1).isdigit():
         print("Invalid input. Enter a numeric value for the price.")
@@ -55,13 +56,16 @@ def is_valid_price(price):
 
     return float(price)
 
+
 def print_error():
     print("Invalid Selection. Please try again.\n")
+
 
 def welcome():
     center = '\t\t\t '
     prompt_start = '\n\n'
     print("\n", center, "|| MEAL RECEIPT GENERATOR || ", prompt_start)
+
 
 def main():
     welcome()
