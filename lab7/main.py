@@ -16,27 +16,34 @@ from Name import Name
 class App:
     @staticmethod
     def get_search_criteria():
-        name = util.validate_str(input("What name would you like to search? "))
-        year = util.validate_range(input("What year would you like to pick (must be between 1915 and 2014)? "), 1915,
-                                   2014)
-        gender = util.chk_char(input("Which gender ('M' for male or 'F' for female)?"))
+        gender = util.chk_char(input("Please select a gender ('M' for male or 'F' for female)? "))
+        year = util.validate_range(input("Which year (between 1915 and 2014) would you like to see? "), 1915, 2014)
 
-        return name, year, gender
+        return year, gender
 
     @classmethod
-    def search(cls, name, year, gender, name_count):
-        name, year, gender = cls.get_search_criteria()
-        names = Name.read_names(name, year, gender, name_count)
-        for name in names:
-            print(name.get_name(), name.get_year(), name.get_gender(), name.get_name_count())
+    def search(cls):
+        year, gender = cls.get_search_criteria()
+        print(f"\n50 most popular names for {gender} babies in {year}:\n ")
+        rows = Name.read_names(year, gender)
+
+        # formatting
+        print(f"{'Year':<6}{'Name':<20}{'Gender':<8}{'Count':<10}")
+        for row in rows[:50]:
+            print(f"{row.get_year():<6}{row.get_name():<20}{row.get_gender():<8}{row.get_name_count():<10}")
 
     @classmethod
     def run(cls):
         while True:
+            print("Welcome to my Popularity Program! \n")
             cls.search()
-            restart = input("Do you want to run the program again ('n' to quit)? ").toLower()
+            restart = input("Do you want to run the program again ('n' to quit)? ").lower()
             if restart == 'n':
                 break
+            else:
+                print("Restarting program . . . \n")
+
+        print("Thank you for stopping by! ")
 
 
 if __name__ == '__main__':

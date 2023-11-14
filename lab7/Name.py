@@ -2,7 +2,6 @@ from Database import Database
 
 
 class Name:
-    name = ""
     year = ""
     gender = ''
     name_count = 0
@@ -26,6 +25,6 @@ class Name:
         return self.name_count
 
     @staticmethod
-    def read_names(name, year, gender, name_count):
-        rows = Database.fetch_names(name, year, gender, name_count)
-        return rows
+    def read_names(year, gender):
+        rows = Database.fetch_names(year, gender)
+        return [Name(row[0], row[1], row[2], row[3]) for row in rows]
