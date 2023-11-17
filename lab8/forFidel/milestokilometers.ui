@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="ttk.Frame" id="milestokilometers_top_frame" named="True">
+    <property name="height">200</property>
+    <property name="padding">10</property>
+    <property name="width">200</property>
+    <layout manager="pack">
+      <property name="side">top</property>
+    </layout>
+    <child>
+      <object class="ttk.Label" id="top_label" named="True">
+        <property name="font">{Arial} 16 {bold}</property>
+        <property name="justify">center</property>
+        <property name="padding">5</property>
+        <property name="text" translatable="yes">Miles to Kilometers</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="input_frame" named="True">
+        <property name="height">200</property>
+        <property name="padding">5</property>
+        <property name="width">200</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="row">1</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="input" named="True">
+            <property name="compound">top</property>
+            <property name="justify">center</property>
+            <property name="padding">5</property>
+            <property name="text" translatable="yes">Miles:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">0</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="miles" named="True">
+            <property name="exportselection">true</property>
+            <property name="textvariable">string:miles_entry_variable</property>
+            <property name="width">10</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">0</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="calculate_milesto_kilometers" named="True">
+        <property name="command" type="command" cbtype="simple">calculate_miles_to_kilometers</property>
+        <property name="takefocus">false</property>
+        <property name="text" translatable="yes">Calculate</property>
+        <property name="width">12</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="padx">5</property>
+          <property name="pady">5</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Separator" id="separator1">
+        <property name="orient">horizontal</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="pady">10</property>
+          <property name="row">3</property>
+          <property name="sticky">ew</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="output_frame" named="True">
+        <property name="height">200</property>
+        <property name="padding">5</property>
+        <property name="width">200</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="row">4</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="label4">
+            <property name="font">{Arial} 14 {bold}</property>
+            <property name="justify">center</property>
+            <property name="padding">5</property>
+            <property name="text" translatable="yes">Calculating...</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="columnspan">2</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="output" named="True">
+            <property name="justify">center</property>
+            <property name="padding">5</property>
+            <property name="text" translatable="yes">Kilometers:</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="row">1</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="kilometers" named="True">
+            <property name="state">readonly</property>
+            <property name="textvariable">string:kilometers_result_variable</property>
+            <property name="width">10</property>
+            <layout manager="grid">
+              <property name="column">1</property>
+              <property name="row">1</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
