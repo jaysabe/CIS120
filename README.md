@@ -7,7 +7,7 @@ Fall Term - 2023
 
 | Assignment    | Date         | Grade                |
 | ------------- | ------------ | -------------------- |
-| [Lab01](./Lab01/) | Oct 2, 2022  | 4.0 / 4.0 - Exceeds  |
+| [Lab01](./lab_1/) | Oct 2, 2022  | 4.0 / 4.0 - Exceeds  |
 | [Lab02](./Lab02/) | Oct 9, 2022  | 4.0 / 4.0 - Exceeds  |
 | [Lab03](./Lab03/) | Oct 16, 2022 | 4.0 / 4.0 - Exceeds  |
 | [Lab04](./Lab04/) | Oct 23, 2022 | 4.0 / 4.0 - Exceeds  |
