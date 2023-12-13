@@ -5,7 +5,21 @@
 ## Portland Community College 
 Fall Term - 2023
 
-| Assignment    | Date         | Grade                |
+| Quiz     | Date         | Grade                |
+| -------- | ------------ | -------------------- |
+| [Quiz01] | Oct 2, 2023  | 4.0 / 4.0 - Exceeds  |
+| [Quiz02] | Oct 9, 2023  | 4.0 / 4.0 - Exceeds  |
+| [Quiz03] | Oct 16, 2023 | 3.5 / 4.0 - Exceeds  |
+| [Quiz04] | Oct 23, 2023 | 3.5 / 4.0 - Exceeds  |
+| [Quiz05] | Oct 30, 2023 | 3.5 / 4.0 - Exceeds  |
+| [Quiz06] | Nov 13, 2023 | 4.0 / 4.0 - Exceeds  |
+| [Quiz07] | Nov 20, 2023 | 4.0 / 4.0 - Exceeds  |
+| [Quiz08] | Nov 27, 2023 | 3.5 / 4.0 - Exceeds |
+| [Quiz09] | Dec 4, 2023  | 3.75 / 4.0 - Exceeds  |
+| [Quiz10] | Dec 10, 2023  | 3.5 / 4.0 - Exceeds  |
+
+
+| Lab    | Date         | Grade                |
 | ------------- | ------------ | -------------------- |
 | [Lab01](./lab_1/) | Oct 2, 2023  | 4.0 / 4.0 - Exceeds  |
 | [Lab02](./lab2/) | Oct 9, 2023  | 4.0 / 4.0 - Exceeds  |
